@@ -93,12 +93,22 @@
     transition: .25s;
 }
 .educationList th{
-    padding: 0 50px;
+    padding: 5px;
+    border: 1px solid black;
+    background: #4338CA;
+    text-align: left;
+    color: white;
+    min-width: 200px;
 }
 .educationList td{
-    text-align: center;
+    border: 1px solid black;
+    text-align: left;
+    padding: 5px;
 }
 
+.educationList tr{
+    margin: 10px;
+}
 
 @media screen and (max-width: 650px) {
     .pdfModel{

@@ -486,18 +486,18 @@ function Newresume() {
                             </div>
                             <div>
                                 <div className="md:flex items-center lg:ml-24 lg:mt-0 mt-4">
-                                    <div className="md:w-64">
-                                        <label className="text-sm leading-none text-gray-800" id="firstName" >Name</label>
-                                        <input type="name" tabIndex="0" className="w-full p-3 mt-3 bg-gray-100 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800" onChange={onHandleChange} name="name" />
+                                    <div className="md:w-64 lg:w-full">
+                                        <label className="text-sm leading-none text-gray-800" id="emailAddress">Email address <span className="text-red-500">*</span> </label>
+                                        <input type="email" tabIndex="0" className="w-full p-3 mt-3 bg-gray-100 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800" onChange={onHandleChange} name="email" />
                                     </div>
                                 </div>
                                 <div className="md:flex items-center lg:ml-24 mt-8">
                                     <div className="md:w-64">
-                                        <label className="text-sm leading-none text-gray-800" id="emailAddress">Email address</label>
-                                        <input type="email" tabIndex="0" className="w-full p-3 mt-3 bg-gray-100 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800" onChange={onHandleChange} name="email" />
+                                        <label className="text-sm leading-none text-gray-800" id="firstName" >Name <span className="text-red-500">*</span> </label>
+                                        <input type="name" tabIndex="0" className="w-full p-3 mt-3 bg-gray-100 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800" onChange={onHandleChange} name="name" />
                                     </div>
                                     <div className="md:w-64 md:ml-12 md:mt-0 mt-4">
-                                        <label className="text-sm leading-none text-gray-800" id="phone" >Phone number</label>
+                                        <label className="text-sm leading-none text-gray-800" id="phone" >Phone number <span className="text-red-500">*</span> </label>
                                         <input type="name" tabIndex="0" className="w-full p-3 mt-3 bg-gray-100 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800" onChange={onHandleChange} name="mobile" />
                                     </div>
                                 </div>
@@ -513,29 +513,30 @@ function Newresume() {
                             </div>
                             <div>
                                 <div className="md:flex items-center lg:ml-24 mt-8">
-                                    <div className="md:w-64">
-                                        <label className="text-sm leading-none text-gray-800" id="firstName" >Address</label>
+                                    <div className="md:w-64 lg:w-full">
+                                        <label className="text-sm leading-none text-gray-800" id="firstName" >Address <span className="text-red-500">*</span> </label>
                                         <input type="name" tabIndex="0" className="w-full p-3 mt-3 bg-gray-100 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800" onChange={onHandleChange} name="address" />
                                     </div>
-                                    <div className="md:w-64 md:ml-12 md:mt-0 mt-4">
-                                        <label className="text-sm leading-none text-gray-800" id="emailAddress">City</label>
-                                        <input type="name" tabIndex="0" className="w-full p-3 mt-3 bg-gray-100 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800" onChange={onHandleChange} name="city" />
-                                    </div>
+
                                 </div>
                                 <div className="md:flex items-center lg:ml-24 mt-8">
                                     <div className="md:w-64">
-                                        <label className="text-sm leading-none text-gray-800" id="emailAddress">Pin Code</label>
-                                        <input type="number" tabIndex="0" className="w-full p-3 mt-3 bg-gray-100 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800" onChange={onHandleChange} name="zip_code" />
+                                        <label className="text-sm leading-none text-gray-800" id="emailAddress">City <span className="text-red-500">*</span> </label>
+                                        <input type="name" tabIndex="0" className="w-full p-3 mt-3 bg-gray-100 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800" onChange={onHandleChange} name="city" />
                                     </div>
                                     <div className="md:w-64 md:ml-12 md:mt-0 mt-4">
-                                        <label className="text-sm leading-none text-gray-800" id="phone" >State</label>
+                                        <label className="text-sm leading-none text-gray-800" id="phone" >State <span className="text-red-500">*</span> </label>
                                         <input type="name" tabIndex="0" className="w-full p-3 mt-3 bg-gray-100 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800" onChange={onHandleChange} name="state" />
                                     </div>
                                 </div>
                                 <div className="md:flex items-center lg:ml-24 mt-8">
                                     <div className="md:w-64">
-                                        <label className="text-sm leading-none text-gray-800" id="emailAddress">Country</label>
+                                        <label className="text-sm leading-none text-gray-800" id="emailAddress">Country <span className="text-red-500">*</span> </label>
                                         <input type="name" tabIndex="0" className="w-full p-3 mt-3 bg-gray-100 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800" onChange={onHandleChange} name="country" />
+                                    </div>
+                                    <div className="md:w-64 md:ml-12 md:mt-0 mt-4">
+                                        <label className="text-sm leading-none text-gray-800" id="emailAddress">Pin Code <span className="text-red-500">*</span> </label>
+                                        <input type="number" tabIndex="0" className="w-full p-3 mt-3 bg-gray-100 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800" onChange={onHandleChange} name="zip_code" />
                                     </div>
                                 </div>
                             </div>
