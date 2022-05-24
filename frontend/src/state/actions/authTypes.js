@@ -1,0 +1,9 @@
+export const LOGIN_SUCCESS_ACTION = '[Login Action] user_login_success';
+export const LOGIN_FAILED_ACTION = '[Login Action] user_login_failed';
+export const SIGNUP_SUCCESS_ACTION = '[Signup Action] user_signup_success';
+export const SIGNUP_FAILED_ACTION = '[Signup Action] user_signup_failed';
+export const LOGOUT_ACTION = '[Logout Action] user_logout';
+export const REFRESH_LOGIN_ACTION = '[Refresh Login Action] refresh_login';
+export const BUTTON_LOADING_ACTION = '[Button Loading Action] button_loading';
+export const EMAIL_VERIFICATION_ACTION = '[Email Verification Action] email_verification';
+export const LOCAL_STORE_LOAD = '[Local Store Load] local_store_load';

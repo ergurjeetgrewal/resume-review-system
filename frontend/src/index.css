@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.pdfModel::-webkit-scrollbar{
+    width: 0;
+}
+/* .rpv-core__inner-pages {
+    overflow: hidden !important;
+} */
+.rpv-core__inner-pages{
+    height: 60vh !important;
+}
+.rpv-core__canvas-layer,canvas{
+    width: 100% !important;
+    height: auto !important;
+}
+.rpv-core__page-layer{
+    width: 100% !important;
+}
+.education-box{
+    width: 100%;
+}
+.educationClonedEmptyDiv{
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    max-width: 100%;
+}
+.education-box .row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.education-box .row input{
+    width: 100% !important;
+    margin: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    line-height: 30px;
+}
+.education-box input:focus{
+    outline: none;
+}
+.education-box .present input{
+    width: 10px;
+    margin: 0;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.education-box .present label{
+    font-size: 110%;
+    font-weight: bolder;
+}
+.duration-div .row input{
+    width: 40px !important;
+}
+
+.duration-div .row input[type="checkbox"]{
+    width: 40px !important;
+}
+.add-new-education{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add-new-education .line{
+    width: 100%;
+    border: 1px dotted black;
+    border-right: none;
+    border-left: none;
+    display: flex;
+    flex: 1;
+}
+.add-new-education span{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    background: blue;
+    transition: .25s;
+    font-size: 130%;
+}
+.add-new-education span:hover{
+    background: rgb(8, 8, 153);
+    transition: .25s;
+}
+.educationList th{
+    padding: 0 50px;
+}
+.educationList td{
+    text-align: center;
+}
+
+
+@media screen and (max-width: 650px) {
+    .pdfModel{
+        width: 100% !important;
+    }
+}
